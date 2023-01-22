@@ -405,7 +405,7 @@ button {
   line-height: 1.17;
   color: var(--logo-bottom-color);
 }
-
+/*footer social*/
 .social-title {
   font-weight: 500;
   font-size: 16px;
@@ -447,7 +447,39 @@ button {
 .footer-list-icon:focus {
   fill: var(--logo-bottom-color);
 }
-
+/*footer subscription*/
+.subscription-form {
+  margin-left: 80px;
+}
+.subscription-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-text-color);
+  margin-bottom: 16px;
+}
+.subscription-form-field {
+  position: relative;
+}
+.subscription-form-input {
+  background-color: var(--dark-header-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  height: 40px;
+  width: 264px;
+}
+.subscription-form-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+}
 /*Portfolio*/
 .section-portfolio {
   padding-top: 96px;
