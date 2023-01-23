@@ -458,8 +458,12 @@ button {
   color: var(--light-text-color);
   margin-bottom: 16px;
 }
+.subscription-block {
+  display: flex;
+}
 .subscription-form-field {
   position: relative;
+  margin-right: 24px;
 }
 .subscription-form-input {
   background-color: var(--dark-header-color);
@@ -468,6 +472,8 @@ button {
   border-radius: 4px;
   height: 40px;
   width: 264px;
+  color: var(--light-text-color);
+  padding-left: 16px;
 }
 .subscription-form-label {
   position: absolute;
@@ -479,6 +485,26 @@ button {
   line-height: 2;
   letter-spacing: 0.04em;
   color: rgba(255, 255, 255, 0.6);
+  transition: transform var(--transition-timing);
+}
+.subscription-form-input:focus {
+  outline: none;
+  border-color: var(--green);
+}
+.subscription-form-input:focus + .subscription-form-label,
+.subscription-form-input:not(:placeholder-shown) + .subscription-form-label {
+  transform: translate(-16px, -40px);
+}
+
+.subscription-form-submit {
+  height: 40px;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscription-form-icon {
+  fill: var(--light-text-color);
 }
 /*Portfolio*/
 .section-portfolio {
